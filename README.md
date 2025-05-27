@@ -1,0 +1,1 @@
+A mini lo-fi music player with a Studio Ghibli-inspired aesthetic. Built with vanilla HTML, CSS, and JavaScript. Includes a background image, animated album art, and a single track playback with custom UI.
