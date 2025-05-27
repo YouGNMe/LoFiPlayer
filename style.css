@@ -1,0 +1,70 @@
+body {
+    background-image: url("assets/cover.png");
+  margin: 0;
+  background-color: #1e1e1e;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* расстояние между обложкой и кнопкой */
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.cover {
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
+}
+
+#play-btn {
+  font-size: 2rem;
+  background: none;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.container img{
+    width: 80px;
+    height: 80px;
+}
+
+/* Анимация "пульсации" */
+/* Анимация */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+  }
+}
+
+.playing {
+  animation: pulse 1.6s infinite ease-in-out;
+}
+
+#play-btn {
+  font-size: 2rem;
+  background: none;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
